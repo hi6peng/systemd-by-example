@@ -6,5 +6,6 @@ RUN apt-get update && \
 RUN rm -rf /lib/systemd/system/* /etc/systemd/system/*
 
 COPY system/ /lib/systemd/system/
+COPY test.sh /usr/bin/
 
 CMD [ "/lib/systemd/systemd" ]

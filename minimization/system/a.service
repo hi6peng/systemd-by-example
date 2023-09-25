@@ -3,6 +3,7 @@ Before=b.service
 
 [Service]
 Type=oneshot
-RemainAfterExit=true
-ExecStart=sleep 1
-ExecStop=sleep 1
+#RemainAfterExit=true
+ExecStart=bash -c '/usr/bin/test.sh'
+#ExecStart=sleep 1
+#ExecStop=sleep 1
